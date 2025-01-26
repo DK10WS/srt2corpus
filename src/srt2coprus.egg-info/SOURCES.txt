@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/srt2coprus.egg-info/PKG-INFO
+src/srt2coprus.egg-info/SOURCES.txt
+src/srt2coprus.egg-info/dependency_links.txt
+src/srt2coprus.egg-info/top_level.txt
+src/srt2corpus/__init__.py
