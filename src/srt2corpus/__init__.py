@@ -50,7 +50,7 @@ class Clean:
         text = re.sub(r"\n\s+", "\n", text)
 
         # Encode text to handle non-UTF-8 characters gracefully and decode back to ensure clean text
-        cleantext = text.encode("utf-8", "replace").decode("utf-8")
+        cleantext = text.encode("utf-8", "replace").decode("utf-8-sig")
 
         return cleantext
 
@@ -61,13 +61,6 @@ class Clean:
         # Write the cleaned text to a new file with "_cleaned" appended to the original filename
         with open(f"{self.dir}_cleaned.txt", "w", encoding="utf-8") as output_file:
             output_file.write(cleaned_text)
-
-        # Remove the first line from the cleaned text file
-        with open(f"{self.dir}_cleaned.txt", "r") as f:
-            lines = f.readlines()
-
-        with open(f"{self.dir}_cleaned.txt", "w") as f:
-            f.writelines(lines[1:])
 
         # Print confirmation
         print(f"{self.dir}_cleaned.txt file created")
