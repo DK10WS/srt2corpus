@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/srt2corpus/__init__.py
+src/srt2corpus.egg-info/PKG-INFO
+src/srt2corpus.egg-info/SOURCES.txt
+src/srt2corpus.egg-info/dependency_links.txt
+src/srt2corpus.egg-info/top_level.txt
